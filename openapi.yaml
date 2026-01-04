@@ -244,6 +244,7 @@ tags:
         - `polygon`
         - `optimism`
         - `arbitrum`
+        - `luxbin`
 
       #### evmData
       A criterion based on encoded transaction data that evaluates the function being called, as well as any number of arguments accessed by either name or index. Currently this criterion only supports primitive types; `string`, `bool`, `uint(8,16,32,64,256)`, `int(8,16,32,64,256)`, `address`, and both fixed and dynamic length `bytes`.
@@ -1284,6 +1285,7 @@ paths:
                     - polygon
                     - optimism
                     - arbitrum
+                    - luxbin
                   example: base-sepolia
                 transaction:
                   type: string
@@ -4876,6 +4878,7 @@ paths:
             enum:
               - base
               - base-sepolia
+              - luxbin
           example: base
         - name: address
           in: path
@@ -6828,6 +6831,7 @@ components:
         - optimism
         - zora
         - polygon
+        - luxbin
         - bnb
         - avalanche
         - ethereum
@@ -6972,6 +6976,7 @@ components:
         - ethereum
         - ethereum-sepolia
         - optimism
+        - luxbin
         - arbitrum
         - avalanche
         - polygon
@@ -7148,6 +7153,7 @@ components:
         - ethereum
         - arbitrum
         - optimism
+        - luxbin
       description: The network on which to perform the swap.
       example: base
     toToken:
